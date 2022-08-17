@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+#Nav section
+
+#icon{
+    margin: 4px 7px 0 22px;
+}
+
+#name{
+    display: flex;
+    border: 2px solid none;
+    height: 70px;
+    width: 100px;
+    padding: 15px 0px 0px 5px;
+    font-size: 1.4rem;
+    /* font-family: 'Baloo Bhaijaan 2'; */
+}
+
+img[alt = 'City Hospital']{
+    height: 69px;
+    width: 88px;
+    cursor: pointer;
+}
+
+header nav{
+    display: flex;
+    border: 2px solid none;
+    /* background-color: #7373f5; */
+    padding: 8px 10px 0 10px;
+    align-items: center;
+    height: 68px;
+    flex-direction: row;
+}
+
+
+header nav ul{
+    display: flex;
+    text-decoration: none;
+    margin-bottom: 17px;
+    list-style: none;
+}
+
+header nav ul>li{
+    margin: 0 5px;
+    font-size: 1.2rem;
+    border: 2px solid none;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 96px;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+header nav ul>li a{
+    text-decoration: none;
+    color: #9696b9;
+}  
+
+header nav ul>li a:hover{
+    color: #595966;
+}
+
+header nav ul li a button:hover{
+    color: #595966;
+}
+
+
+.hover{
+    border: none;
+    font-size: 1.2rem;
+    height: 30px;
+    width: max-content;
+    color: #9696b9;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    position: relative;
+} 
+
+
+
+#hovercontent2{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+}
+
+
+#hovercontent2 a:nth-child(2){
+    border-top: none;
+}
+
+#hovercontent2 a:nth-child(3){
+    border-top: none;
+}
+
+#hovercontent2 a{
+    display: block;
+    border: 2px solid #c79d9d;
+    width: 174px;
+    /* padding: 5px; */
+    color: white;
+    background-color: #d4b8b8;
+}
+
+#hovercontent2 a:hover{
+    color: white;
+    background-color: rgb(128, 92, 92);
+}
+
+/* Section  */
+#block{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    border: none;
+    background-color: #00edff;
+    padding: 37px;
+}
+
+#dept{
+    border-right: 2px solid #ab8484;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+#dept a{
+    border-bottom: 2px solid #ab8484;
+    height: 82px;
+    width: 353px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #af117e;
+}
+
+#dept a[href="#box3"]{
+    border-bottom: none;
+}
+
+#dept a:hover{
+    background-color: rgb(157, 110, 233);
+    color: white;
+}
+
+#box1{
+    display: none;
+}
+
+#box2{
+    display: none;
+}
+
+#box3{
+    display: none;
+}
+
+#insertcontent{
+    display: flex;
+    color: #232325;
+    border: none;
+    text-align: justify;
+    height: fit-content;
+    font-size: 1.1rem;
+    padding: 12px;
+    margin-left: 61px;
+}
+
+
+
+/* Footer section */
+footer{
+    border: 2px solid none;
+    background-color: #232325;
+    color: white;
+}
+
+footer span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer span ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: 89px;
+}
+
+footer span ul li{
+    list-style: none;
+    margin: 29px 52px 29px 0px;
+    font-size: 1.4rem;
+}
+
+footer span ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer span ul li a:hover{
+    color: rgb(34, 141, 177);
+}
+
+footer span b{
+    color: white;
+    margin: 2px 0px;
+    font-size: 1.2rem;
+}
+
+
+footer span p{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 14px 0px 5px 31px;
+}
+
+footer #social i{
+    margin: 15px;
+}
+
+footer #social a{
+    text-decoration: none;
+    color: white;
+}
+
+footer #social a:hover{
+    color: rgb(34, 141, 177);
+}

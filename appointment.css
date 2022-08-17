@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#Nav section
+
+#icon{
+    margin: 4px 7px 0 22px;
+}
+
+#name{
+    display: flex;
+    border: 2px solid none;
+    height: 70px;
+    width: 100px;
+    padding: 15px 0px 0px 5px;
+    font-size: 1.4rem;
+    /* font-family: 'Baloo Bhaijaan 2'; */
+}
+
+img[alt = 'City Hospital']{
+    height: 69px;
+    width: 88px;
+    cursor: pointer;
+}
+
+header nav{
+    display: flex;
+    border: 2px solid none;
+    /* background-color: #7373f5; */
+    padding: 8px 10px 0 10px;
+    align-items: center;
+    height: 68px;
+    flex-direction: row;
+}
+
+
+header nav ul{
+    display: flex;
+    text-decoration: none;
+    margin-bottom: 17px;
+    list-style: none;
+}
+
+header nav ul>li{
+    margin: 0 5px;
+    font-size: 1.2rem;
+    border: 2px solid none;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 96px;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+header nav ul>li a{
+    text-decoration: none;
+    color: #9696b9;
+}  
+
+header nav ul>li a:hover{
+    color: #595966;
+}
+
+header nav ul li a button:hover{
+    color: #595966;
+}
+
+
+.hover{
+    border: none;
+    font-size: 1.2rem;
+    height: 30px;
+    width: max-content;
+    color: #9696b9;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    position: relative;
+} 
+
+
+
+#hovercontent2{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+}
+
+
+#hovercontent2 a:nth-child(2){
+    border-top: none;
+}
+
+#hovercontent2 a:nth-child(3){
+    border-top: none;
+}
+
+#hovercontent2 a{
+    display: block;
+    border: 2px solid #c79d9d;
+    width: 174px;
+    /* padding: 5px; */
+    color: white;
+    background-color: #d4b8b8;
+}
+
+#hovercontent2 a:hover{
+    color: white;
+    background-color: rgb(128, 92, 92);
+}
+
+/* Container  */
+
+.container::before{
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 99.7%;
+    position: absolute;
+    background: url('/doc_appointment.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.container{
+    display: flex;
+    border: 2px solid none;
+    justify-content: center;
+    height: 577px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    float: right;
+    width: 375px;
+    height: 505px;
+    border: 1px solid red;
+    border-radius: 16px;
+    align-items: start;
+    padding: 12px;
+    margin: 21px 0px 0px 34px;
+}
+
+.formerror{
+    color: red;
+}
+
+.formelement{
+    display: flex;
+    flex-direction: row;
+}
+
+form input{
+    height: 43px;
+    width: 353px;
+    font-size: 0.9rem;
+    border: 1px solid red;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+form input[name="Message"]{
+    height: 148px;
+    width: 353px;
+}
+
+form input[type="submit"]{
+    display: flex;
+    height: 32px;
+    width: 75px;
+    font-size: 0.9rem;
+    border: 1px solid red;
+    border-radius: 18px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: blue;
+    background-color: #e9ff00;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+
+/* Footer section */
+footer{
+    border: 2px solid none;
+    background-color: #232325;
+    color: white;
+}
+
+footer span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer span ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: 89px;
+}
+
+footer span ul li{
+    list-style: none;
+    margin: 29px 52px 29px 0px;
+    font-size: 1.4rem;
+}
+
+footer span ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer span ul li a:hover{
+    color: rgb(34, 141, 177);
+}
+
+footer span b{
+    color: white;
+    margin: 2px 0px;
+    font-size: 1.2rem;
+}
+
+
+footer span p{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 14px 0px 5px 31px;
+}
+
+footer #social i{
+    margin: 15px;
+}
+
+footer #social a{
+    text-decoration: none;
+    color: white;
+}
+
+footer #social a:hover{
+    color: rgb(34, 141, 177);
+}
