@@ -1,213 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="shortcut icon" href="Medical-health-logo-design-on-transparent-background-PNG.jpg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="shortcut icon"
+      href="Medical-health-logo-design-on-transparent-background-PNG.jpg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap"
+      rel="stylesheet"
+    />
     <title>City Hospital</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <span id="icon">
-                <a href="/index.html"><img src="Medical-health-logo-design-on-transparent-background-PNG.jpg"
-                        alt="City Hospital"></a>
-            </span>
-            <span id="name">City Hospital</span>
-            <span id="menu" onclick="show()"><i class="fas fa-bars fa-2x" id="dropdown"></i></span>
-            <span id="cross" onclick="cancel()"><i class="fas fa-times fa-2x" id="cancel"></i></span>
-            <ul id="tabs">
-                <a href="/index.html">
-                    <li>Home</li>
-                </a>
-                <a href="#about
-                    ">
-                    <li>About Us</li>
-                </a>
-                <a href="#service">
-                    <li>
-                        Services
-                    </li>
-                </a>
-                <a href="/department.html" target="blank">
-                <li>
-                    <button class="hover" onmousedown="hoverout2()"
-                            onmouseover="hoverin2()">
-                            Departments
-                        </button>
-                        
-                    </li>
-                </a>
-                <div id="hovercontent2">
-                    <a href="./department.html#box1" onclick="blockinsert1()" target="blank">Neurology</a>
-                    <a href="./department.html#box2" onclick="blockinsert2()" target="blank">Cardiology</a>
-                    <a href="./department.html#box3" onclick="blockinsert3()" target="blank">Psychiatry</a>
-                </div>
-                <a href="/contact.html" target="blank"><li>Contact</li></a>
-            </ul>
-        </nav>
+      <nav>
+        <span id="icon">
+          <a href="/index.html"
+            ><img
+              src="Medical-health-logo-design-on-transparent-background-PNG.jpg"
+              alt="City Hospital"
+          /></a>
+        </span>
+        <span id="name">City Hospital</span>
+        <!-- <span id="menu" onclick="show()"
+          ><i class="fas fa-bars fa-2x" id="dropdown"></i
+        ></span>
+        <span id="cross" onclick="cancel()"
+          ><i class="fas fa-times fa-2x" id="cancel"></i
+        ></span> -->
+        <ul id="tabs">
+          <a href="/index.html">
+            <li>Home</li>
+          </a>
+          <a
+            href="#about
+                    "
+          >
+            <li>About Us</li>
+          </a>
+          <a href="#service">
+            <li>Services</li>
+          </a>
+          <a href="/department.html" target="blank">
+            <li>
+              <button
+                class="hover"
+                onmousedown="hoverout2()"
+                onmouseover="hoverin2()"
+              >
+                Departments
+              </button>
+            </li>
+          </a>
+          <div id="hovercontent2">
+            <a
+              href="./department.html#box1"
+              onclick="blockinsert1()"
+              target="blank"
+              >Neurology</a
+            >
+            <a
+              href="./department.html#box2"
+              onclick="blockinsert2()"
+              target="blank"
+              >Cardiology</a
+            >
+            <a
+              href="./department.html#box3"
+              onclick="blockinsert3()"
+              target="blank"
+              >Psychiatry</a
+            >
+          </div>
+          <a href="/contact.html" target="blank"><li>Contact</li></a>
+        </ul>
+
+        <button onclick="dropdown()">
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </button>
+      </nav>
     </header>
     <div id="intro">
-        <span>
-            <h1>Welcome to City Hospital</h1>
-            <h3>To Save Humanity</h3>
-            <pre>We Save <b>Lives</b>,
+      <span>
+        <h1>Welcome to City Hospital</h1>
+        <h3>To Save Humanity</h3>
+        <pre>We Save <b>Lives</b>,
 You make the <b>Difference</b></pre>
-        </span>
-        <img src="medical_checkup.jpg" alt="Hospital">
+      </span>
+      <img src="medical_checkup.jpg" alt="Hospital" />
     </div>
     <div id="appointment">
-        <span>Book an appointment <a href="/appointment.html" target="blank"><i
-                    class="fas fa-chevron-circle-right"></i></a>
-        </span>
-        <span>
-            Timings: 8.00 to 12.00
-        </span>
+      <span
+        >Book an appointment
+        <a href="/appointment.html" target="blank"
+          ><i class="fas fa-chevron-circle-right"></i
+        ></a>
+      </span>
+      <span> Timings: 8.00 to 12.00 </span>
     </div>
 
     <section id="about">
-        <h2>About Us</h2>
-        <div class="content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consequatur deleniti, atque nobis officiis
-                at id adipisci repellendus error! Ab consequatur animi vel neque velit quis laboriosam ipsa labore nihil
-                natus impedit exercitationem facilis, alias quasi et eligendi? Enim nostrum soluta esse, voluptatibus
-                cupiditate veniam adipisci consequuntur incidunt explicabo est odit? Itaque culpa voluptate incidunt!
-                Qui quidem, deserunt voluptates eveniet vitae et nisi animi quam architecto. Odit iure delectus
-                molestias nam eaque. </p>
-        </div>
+      <h2>About Us</h2>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+          consequatur deleniti, atque nobis officiis at id adipisci repellendus
+          error! Ab consequatur animi vel neque velit quis laboriosam ipsa
+          labore nihil natus impedit exercitationem facilis, alias quasi et
+          eligendi? Enim nostrum soluta esse, voluptatibus cupiditate veniam
+          adipisci consequuntur incidunt explicabo est odit? Itaque culpa
+          voluptate incidunt! Qui quidem, deserunt voluptates eveniet vitae et
+          nisi animi quam architecto. Odit iure delectus molestias nam eaque.
+        </p>
+      </div>
     </section>
 
     <section id="service">
-        <h2>Our Services</h2>
-        <div id="sblock">
-            <span class="block" id="s1">
-                <div class="title">Free Checkup</div>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, labore assumenda. Qui quia quas
-                    mollitia veritatis id sint ut rem.</div>
-            </span>
-            <span class="block" id="s2">
-                <div class="title">24x7 Assistance</div>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptate fuga explicabo amet! Cum
-                    illo amet quis et rerum qui.</div>
-            </span>
-            <span class="block" id="s3">
-                <div class="title">Intensive Care Unit</div>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptate fuga explicabo amet! Cum
-                    illo amet quis et rerum qui.</div>
-            </span>
-            <span class="block" id="s4">
-                <div class="title">Emergency Room Service</div>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptate fuga explicabo amet! Cum
-                    illo amet quis et rerum qui.</div>
-            </span>
-            <span class="block" id="s5">
-                <div class="title">X-ray</div>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptate fuga explicabo amet! Cum
-                    illo amet quis et rerum qui.</div>
-            </span>
-            <span class="block" id="s6">
-                <div class="title">MRI Scan</div>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptate fuga explicabo amet! Cum
-                    illo amet quis et rerum qui.</div>
-            </span>
-        </div>
+      <h2>Our Services</h2>
+      <div id="sblock">
+        <span class="block" id="s1">
+          <div class="title">Free Checkup</div>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+            labore assumenda. Qui quia quas mollitia veritatis id sint ut rem.
+          </div>
+        </span>
+        <span class="block" id="s2">
+          <div class="title">24x7 Assistance</div>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+            voluptate fuga explicabo amet! Cum illo amet quis et rerum qui.
+          </div>
+        </span>
+        <span class="block" id="s3">
+          <div class="title">Intensive Care Unit</div>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+            voluptate fuga explicabo amet! Cum illo amet quis et rerum qui.
+          </div>
+        </span>
+        <span class="block" id="s4">
+          <div class="title">Emergency Room Service</div>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+            voluptate fuga explicabo amet! Cum illo amet quis et rerum qui.
+          </div>
+        </span>
+        <span class="block" id="s5">
+          <div class="title">X-ray</div>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+            voluptate fuga explicabo amet! Cum illo amet quis et rerum qui.
+          </div>
+        </span>
+        <span class="block" id="s6">
+          <div class="title">MRI Scan</div>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+            voluptate fuga explicabo amet! Cum illo amet quis et rerum qui.
+          </div>
+        </span>
+      </div>
     </section>
 
     <section id="dept">
-        <h2>Departments</h2>
-        <div id="deptblock">
-            <span class="department" id="d1">
-                <div id="deptname1">Neurology</div>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, autem dolorum suscipit
-                    blanditiis, perspiciatis ex atque quam ducimus nemo voluptates, natus quasi impedit quis iste earum
-                    minus! Quae, incidunt accusamus?</div>
-            </span>
-            <span class="department" id="d2">
-                <div id="deptname2">Cardiology</div>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias optio nemo vitae, qui explicabo
-                    nesciunt, ad quo, dicta laudantium at pariatur aliquam sapiente reprehenderit accusamus quis.
-                    Molestiae maxime quia exercitationem!</div>
-            </span>
-            <span class="department" id="d3">
-                <div id="deptname3">Psychiatry</div>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum doloremque magnam fugiat
-                    repellat vero at nemo cumque suscipit, assumenda consectetur tempore optio ipsam, aperiam itaque
-                    sint laborum, similique id. Porro!</div>
-            </span>
-        </div>
+      <h2>Departments</h2>
+      <div id="deptblock">
+        <span class="department" id="d1">
+          <div id="deptname1">Neurology</div>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+            autem dolorum suscipit blanditiis, perspiciatis ex atque quam
+            ducimus nemo voluptates, natus quasi impedit quis iste earum minus!
+            Quae, incidunt accusamus?
+          </div>
+        </span>
+        <span class="department" id="d2">
+          <div id="deptname2">Cardiology</div>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias optio
+            nemo vitae, qui explicabo nesciunt, ad quo, dicta laudantium at
+            pariatur aliquam sapiente reprehenderit accusamus quis. Molestiae
+            maxime quia exercitationem!
+          </div>
+        </span>
+        <span class="department" id="d3">
+          <div id="deptname3">Psychiatry</div>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            doloremque magnam fugiat repellat vero at nemo cumque suscipit,
+            assumenda consectetur tempore optio ipsam, aperiam itaque sint
+            laborum, similique id. Porro!
+          </div>
+        </span>
+      </div>
     </section>
 
-
     <footer>
-        <span>
-            <ul>
-                <li><a href="/index.html"> Home</a></li>
-                <li><a href="#about"> About Us</a></li>
-                <li><a href="#service"> Services</a></li>
-                <li><a href="/department.html" target="blank"> Departments</a></li>
-                <li><a href="/contact.html" target="blank"> Contact</a></li>
-            </ul>
-            <a href="/index.html"><img src="Medical-health-logo-design-on-transparent-background-PNG.jpg"
-                    alt="City Hospital"></a>
-            <p>
-                Contact: 8925364856 <br>
-                Email: cityhospital@gmail.com
-            </p>
-            <div id="social">
-                <a href="https://www.facebook.com/pages/City-Hospital-Kurla/937248286290862" target="blank"><i
-                        class="fa fa-2x fa-facebook"></i></a>
-                <a href="https://www.instagram.com/explore/locations/1017621405/city-hospital-kurla/" target="blank"><i
-                        class="fa fa-2x fa-instagram"></i></a>
-                <a href="https://www.youtube.com/channel/UCax57ksJvzN_phiF3QqUgXg/about" target="blank"><i
-                        class="fa fa-2x fa-youtube"></i></a>
-            </div>
-            <b>Copyright &copy;City Hospital</b>
-        </span>
+      <span>
+        <ul>
+          <li><a href="/index.html"> Home</a></li>
+          <li><a href="#about"> About Us</a></li>
+          <li><a href="#service"> Services</a></li>
+          <li><a href="/department.html" target="blank"> Departments</a></li>
+          <li><a href="/contact.html" target="blank"> Contact</a></li>
+        </ul>
+        <a href="/index.html"
+          ><img
+            src="Medical-health-logo-design-on-transparent-background-PNG.jpg"
+            alt="City Hospital"
+        /></a>
+        <p>
+          Contact: 8925364856 <br />
+          Email: cityhospital@gmail.com
+        </p>
+        <div id="social">
+          <a
+            href="https://www.facebook.com/pages/City-Hospital-Kurla/937248286290862"
+            target="blank"
+            ><i class="fa fa-2x fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/explore/locations/1017621405/city-hospital-kurla/"
+            target="blank"
+            ><i class="fa fa-2x fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCax57ksJvzN_phiF3QqUgXg/about"
+            target="blank"
+            ><i class="fa fa-2x fa-youtube"></i
+          ></a>
+        </div>
+        <b>Copyright &copy;City Hospital</b>
+      </span>
     </footer>
     <script>
+      // let hover = document.getElementsByClassName('hover');
+      let hovercontent2 = document.getElementById("hovercontent2");
+      let section1 = document.getElementById("section1");
+      let dropdown2 = document.getElementById("dropdown2");
+      let dropdown = document.getElementById("dropdown");
 
-        // let hover = document.getElementsByClassName('hover');
-        let hovercontent2 = document.getElementById('hovercontent2');
-        let section1 = document.getElementById('section1');
+      function hoverin2() {
+        hovercontent2.style.display = "flex";
+      }
 
-        function hoverin2() {
-            hovercontent2.style.display = 'flex';
+      function hoverout2() {
+        hovercontent2.style.display = "none";
+      }
+
+      function hoverin3() {
+        dropdown2.style.display = "flex";
+        dropdown.style.margin = "333px 28px 0px 196px";
+      }
+
+      window.onclick = () => {
+        if (hovercontent2.style.display != "none") {
+          hovercontent2.style.display = "none";
         }
 
-        function hoverout2() {
-            hovercontent2.style.display = 'none';
+        if (dropdown2.style.display != "none") {
+          dropdown2.style.display = "none";
+        }
+      };
+
+      function show() {
+        let tabs = document.getElementById("tabs");
+        if (tabs.style.display != "flex") {
+          tabs.style.display = "flex";
         }
 
-        window.onclick = () => {
-            if (hovercontent2.style.display != 'none') {
-                hovercontent2.style.display = 'none';
-            }
-        }
+        // if (tabs.style.display != 'none'){
+        //     tabs.style.display = 'none';
+        // }
+      }
 
-        function show() {
-            let tabs = document.getElementById('tabs')
-            if (tabs.style.display != 'flex') {
-                tabs.style.display = 'flex';
-            }
-
-            // if (tabs.style.display != 'none'){
-            //     tabs.style.display = 'none';
-            // }
-        }
-
-        function cancel() {
-            let tabs = document.getElementsByTagName('ul');
-            tabs.style.display = 'none';
-        }
-
-
+      function cancel() {
+        let tabs = document.getElementsByTagName("ul");
+        tabs.style.display = "none";
+      }
     </script>
-    <script src="https://kit.fontawesome.com/5fa829b1c9.js" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/5fa829b1c9.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

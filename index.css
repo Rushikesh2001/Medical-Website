@@ -1,536 +1,505 @@
-)
-    
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@media screen and (min-width: 200px); (max-width:350px){
+@media only screen and (max-width: 800px) {
+  img[alt="City Hospital"] {
+    height: 53px;
+    width: 60px;
+  }
 
-    img[alt = 'City Hospital'] {
-        height: 53px;
-        width: 60px;
-    }
-
-    #name{
-        font-size: 1.2rem;
-    }
-
-    #menu{
-        display: flex;
-        margin: 4px 4px 4px 858px;
-    }
-
-    header nav ul{
-        display: flex;
-        flex-direction: column;
-        background-color: #421f1f;
-        width: 403px;
-    }
-
-    #cancel{
-        display: none;
-    }
-
-    header nav ul{
-        display: flex;
-        flex-direction: column;
-        background-color: #421f1f;
-        align-items: center;
-        text-decoration: none;
-        width: 422px;
-        height: fit-content;
-        margin-top: 407px;
-        z-index: 1;
-        list-style: none;
-    }
-    
-    header nav ul a{
-        display: flex;
-        margin: 0 5px;
-        color: #9696b9;
-        text-decoration: none;
-        font-size: 1.3rem;
-        border: 2px solid white;
-        box-sizing: border-box;
-        height: 68px;
-        align-items: center;
-        justify-content: center;
-        width: inherit;
-        text-align: center;
-        font-family: 'Baloo Bhaijaan 2', cursive;
-    }
-
-    #hovercontent2 a{
-        width: 422px;
-    }
-
-    #hovercontent2{
-        margin-top: 273px;
-    }
-
-    .hover{
-        height: 69px;
-        width: 421px;
-    }
-
-    header nav ul a li button:hover{
-        background-color: #57cc84;
-    }
-
-
-
-}
-
-
-#Nav section
-
-#icon{
-    margin: 4px 7px 0 22px;
-}
-
-#name{
-    display: flex;
-    border: 2px solid none;
-    height: 70px;
-    width: 100px;
-    padding: 15px 0px 0px 5px;
-    font-size: 1.4rem;
-    /* font-family: 'Baloo Bhaijaan 2'; */
-}
-
-img[alt = 'City Hospital']{
-    height: 69px;
-    width: 88px;
-    cursor: pointer;
-}
-
-#menu{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 100px;
-    margin: 4px;
-    cursor: pointer;
-}
-
-#cross{
-    display: none;
-}
-
-#dropdown{
-    margin: 0px 28px;
-}
-
-
-header nav{
-    display: flex;
-    border: 2px solid none;
-    padding: 8px 10px 0 10px;
-    align-items: center;
-    height: 68px;
-    flex-direction: row;
-}
-
-
-header nav ul{
-    display: flex;
-    text-decoration: none;
-    margin-bottom: 17px;
-    list-style: none;
-}
-
-header nav ul a{
-    margin: 0 5px;
+  #name {
     font-size: 1.2rem;
-    color: #9696b9;
-    border: 2px solid none;
-    text-decoration: none;
-    box-sizing: border-box;
-    border-radius: 30px;
-    width: 96px;
-    text-align: center;
-    font-family: 'Baloo Bhaijaan 2', cursive;
-}
+  }
 
+  #menu {
+    display: flex;
+    margin: 4px 4px 4px 858px;
+  }
 
-header nav ul a:hover{
-    color: #595966;
-}
-
-header nav ul a li button:hover{
-    color: #595966;
-}
-
-
-.hover{
-    border: none;
-    font-size: 1.2rem;
-    height: 30px;
-    width: max-content;
-    color: #9696b9;
-    background-color: transparent;
-    cursor: pointer;
-    font-family: 'Baloo Bhaijaan 2', cursive;
-    position: relative;
-} 
-
-
-
-#hovercontent2{
-    display: none;
+  header nav {
+    display: flex;
+    padding: 0;
+    align-items: center;
     flex-direction: column;
-    margin: 22px 0px 0px 315px;
-    position: absolute;
-    z-index: 1;
-}
+    height: fit-content;
+  }
 
+  #name {
+    display: block;
+    height: 42px;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
 
-#hovercontent2 a:nth-child(2){
-    border-top: none;
-}
+  header nav #tabs {
+    flex-direction: column;
+    background-color: violet;
+    width: 100%;
+    align-items: center;
+  }
 
-#hovercontent2 a:nth-child(3){
-    border-top: none;
-}
-
-#hovercontent2 a{
-    display: flex;
-    border: 2px solid #c79d9d;
-    width: max-content;
+  header nav #tabs a {
     color: white;
-    background-color: #d4b8b8;
-    text-decoration: none;
+  }
+
+  #tabs .hover {
+    color: white;
+  }
 }
 
-#hovercontent2 a:hover{
-    color: white;
-    background-color: rgb(128, 92, 92);
+#Nav section #icon {
+  margin: 4px 7px 0 22px;
+}
+
+#name {
+  display: flex;
+  border: 2px solid none;
+  height: 70px;
+  width: 100px;
+  padding: 15px 0px 0px 5px;
+  font-size: 1.4rem;
+  /* font-family: 'Baloo Bhaijaan 2'; */
+}
+
+img[alt="City Hospital"] {
+  height: 69px;
+  width: 88px;
+  cursor: pointer;
+}
+
+#menu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+#cross {
+  display: none;
+}
+
+#dropdown {
+  margin: 0px 28px;
+}
+
+header nav {
+  display: flex;
+  border: 2px solid none;
+  padding: 8px 10px 0 10px;
+  align-items: center;
+  height: 68px;
+  flex-direction: row;
+}
+
+header nav #tabs {
+  display: flex;
+  text-decoration: none;
+  margin-bottom: 17px;
+  list-style: none;
+}
+
+header nav #tabs a {
+  margin: 0 5px;
+  font-size: 1.2rem;
+  color: #9696b9;
+  border: 2px solid none;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 30px;
+  width: 96px;
+  text-align: center;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+header nav #tabs a:hover {
+  color: #595966;
+}
+
+header nav #tabs a li button:hover {
+  color: #595966;
+}
+
+#tabs .hover {
+  border: none;
+  font-size: 1.2rem;
+  height: 30px;
+  width: max-content;
+  color: #9696b9;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  position: relative;
+}
+
+#tabs #hovercontent2 {
+  display: none;
+  flex-direction: column;
+  margin: 22px 0px 0px 315px;
+  position: absolute;
+  z-index: 1;
+}
+
+#tabs #hovercontent2 a:nth-child(2) {
+  border-top: none;
+}
+
+#tabs #hovercontent2 a:nth-child(3) {
+  border-top: none;
+}
+
+#tabs #hovercontent2 a {
+  display: block;
+  border: 2px solid #c79d9d;
+  width: 174px;
+  color: white;
+  background-color: #d4b8b8;
+  text-decoration: none;
+}
+
+#tabs #hovercontent2 a:hover {
+  color: white;
+  background-color: rgb(128, 92, 92);
+}
+
+/* Dropdown section */
+
+header nav > button {
+  position: absolute;
+  border: 2px solid red;
+  margin: 0px 0px 0px 191px;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
 }
 
 /* Container  */
-#intro{
-    border: 2px solid none;
-    height: 88vh;
-    display: flex;
-    flex-direction: row;
-    color: #af117e;
-
+#intro {
+  border: 2px solid none;
+  height: 88vh;
+  display: flex;
+  flex-direction: row;
+  color: #af117e;
 }
 
-#intro h1{
-    font-size: 3.5rem;
+#intro h1 {
+  font-size: 3.5rem;
 }
 
-#intro h3{
-    width: fit-content;
-    font-size: 2.5rem;
+#intro h3 {
+  width: fit-content;
+  font-size: 2.5rem;
 }
 
-#intro pre{
-    font-size: 1.5rem;
-    text-align: center;
+#intro pre {
+  font-size: 1.5rem;
+  text-align: center;
 }
 
-#intro span{
-    display: flex;
-    flex-direction: column;
-    border: 2px solid none;
-    /* align-items: center; */
-    justify-content: center;
-    height: 578px;
-    width: 441px;
-    padding: 0px 15px 0px 15px;
-    background-color: #00edff;
+#intro span {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid none;
+  /* align-items: center; */
+  justify-content: center;
+  height: 578px;
+  width: 441px;
+  padding: 0px 15px 0px 15px;
+  background-color: #00edff;
 }
 
-#appointment{
-    display: flex;
-    height: 100px;
-    background-color: blue;
-    color: white;
-    font-size: 1.9rem;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+#appointment {
+  display: flex;
+  height: 100px;
+  background-color: blue;
+  color: white;
+  font-size: 1.9rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-#appointment span a{
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-    margin-left: 12px;
+#appointment span a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 12px;
 }
 
-#appointment span a:hover{
-    color: yellow;
+#appointment span a:hover {
+  color: yellow;
 }
 
-hr{
-    margin: 10px 10px;
+hr {
+  margin: 10px 10px;
 }
 
 /* Section-1 */
-#title1{
-    margin-top: 61px;
-    text-align: center;
-    font-size: 1.7rem;
-    color: #9696b9;
+#title1 {
+  margin-top: 61px;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #9696b9;
 }
 
-#about::before{
-    content: " ";
-    display: block;
-    position: absolute;
-    height: 117%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.4;
-    background-image: url('/hospital1.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+#about::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 117%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  background-image: url("/hospital1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-#about{
-    display: flex;
-    flex-direction: column;
-    border-top: 2px solid none;
-    align-items: center;
-    justify-content: center;
-    height: 544px;
-    color: black;
-    margin-bottom: 144px;
+#about {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid none;
+  align-items: center;
+  justify-content: center;
+  height: 544px;
+  color: black;
+  margin-bottom: 144px;
 }
 
-#about h2{
-    display: block;
-    border: 2px solid none;
-    font-size: 3.2rem;
-    color: #af117e;
+#about h2 {
+  display: block;
+  border: 2px solid none;
+  font-size: 3.2rem;
+  color: #af117e;
 }
 
-.content{
-    display: flex;
-    flex-direction: column;
-    border: 2px solid none;
-    color: #810303;
-    width: 1127px;
-    text-align: center;
-    padding: 10px 10px 0 24px;
-    font-size: 1.7rem;
-    font-family: 'Baloo Bhaijaan 2', cursive;
+.content {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid none;
+  color: #810303;
+  width: 1127px;
+  text-align: center;
+  padding: 10px 10px 0 24px;
+  font-size: 1.7rem;
+  font-family: "Baloo Bhaijaan 2", cursive;
 }
 
-.content h2{
-    font-size: 2.1rem;
+.content h2 {
+  font-size: 2.1rem;
 }
 
-#about img{
-    border: 4px solid #9191e7;
-    border-radius: 15px;
-    height: 404px;
-    width: 558px;
-    margin: 10px 30px 0 15px;
+#about img {
+  border: 4px solid #9191e7;
+  border-radius: 15px;
+  height: 404px;
+  width: 558px;
+  margin: 10px 30px 0 15px;
 }
 
 /* Section-2 */
-#title2{
-    text-align: center;
-    font-size: 1.7rem;
-    color: #9696b9;
+#title2 {
+  text-align: center;
+  font-size: 1.7rem;
+  color: #9696b9;
 }
 
-#service::before{
-    content: " ";
-    display: block;
-    height: 120%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.4;
-    background-image: url('/img2.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
+#service::before {
+  content: " ";
+  display: block;
+  height: 120%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  background-image: url("/img2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
 }
 
-#service{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+#service {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-#service #sblock{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 5em;
-    position: relative;
+#service #sblock {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5em;
+  position: relative;
 }
 
-#service .block{
-    display: flex;
-    flex-direction: column;
-    margin: 29px auto auto auto;
-    height: 120px;
-    width: 367px;
-    border: 2px solid #8f24e3;
-    padding: 8px;
-    color: #8a0b61;
+#service .block {
+  display: flex;
+  flex-direction: column;
+  margin: 29px auto auto auto;
+  height: 120px;
+  width: 367px;
+  border: 2px solid #8f24e3;
+  padding: 8px;
+  color: #8a0b61;
 }
 
-#service .block div:nth-child(2){
-    font-size: 1.2rem;
-    font-family: 'Baloo Bhaijaan 2', cursive;
+#service .block div:nth-child(2) {
+  font-size: 1.2rem;
+  font-family: "Baloo Bhaijaan 2", cursive;
 }
 
-.title{
-    text-align: center;
-    font-size: 1.7rem;
-    font-weight: bold;
+.title {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: bold;
 }
 
-#service h2{
-    display: block;
-    border: 2px solid none;
-    font-size: 3.2rem;
-    color: #af117e;
+#service h2 {
+  display: block;
+  border: 2px solid none;
+  font-size: 3.2rem;
+  color: #af117e;
 }
-
 
 /* Section-3 */
-#title3{
-    text-align: center;
-    font-size: 1.7rem;
-    color: #9696b9;
-    margin-top: 98px;
+#title3 {
+  text-align: center;
+  font-size: 1.7rem;
+  color: #9696b9;
+  margin-top: 98px;
 }
 
-#dept{
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    flex-direction: column;
-    margin-top: 29px;
-    padding: 25px 0px;
-    background-color: lightblue;
+#dept {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  margin-top: 29px;
+  padding: 25px 0px;
+  background-color: lightblue;
 }
 
-#dept h2{
-    display: block;
-    border: 2px solid none;
-    width: fit-content;
-    font-size: 3.2rem;
-    color: #af117e;
+#dept h2 {
+  display: block;
+  border: 2px solid none;
+  width: fit-content;
+  font-size: 3.2rem;
+  color: #af117e;
 }
 
-#deptblock{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 5em;
+#deptblock {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5em;
 }
 
-#dept #deptblock .department{
-    display: flex;
-    flex-direction: column;
-    margin: 29px auto auto auto;
-    height: 250px;
-    width: 300px;
-    border: 2px solid red;
+#dept #deptblock .department {
+  display: flex;
+  flex-direction: column;
+  margin: 29px auto auto auto;
+  height: 250px;
+  width: 300px;
+  border: 2px solid red;
 }
 
-#deptname1{
-    text-align: center;
-    font-size: 1.7rem;
-    border: 2px solid darkgreen;
-    background-color: #5ed95e;
-    color: #104805;
-    box-shadow: inset 1px 1px 12px 2px darkgreen;
+#deptname1 {
+  text-align: center;
+  font-size: 1.7rem;
+  border: 2px solid darkgreen;
+  background-color: #5ed95e;
+  color: #104805;
+  box-shadow: inset 1px 1px 12px 2px darkgreen;
 }
 
-#deptname2{
-    text-align: center;
-    font-size: 1.7rem;
-    border: 2px solid darkgreen;
-    background-color: #5ed95e;
-    color: #104805;
-    box-shadow: inset 1px 1px 12px 2px darkgreen;
+#deptname2 {
+  text-align: center;
+  font-size: 1.7rem;
+  border: 2px solid darkgreen;
+  background-color: #5ed95e;
+  color: #104805;
+  box-shadow: inset 1px 1px 12px 2px darkgreen;
 }
 
-#deptname3{
-    text-align: center;
-    font-size: 1.7rem;
-    border: 2px solid darkgreen;
-    background-color: #5ed95e;
-    color: #104805;
-    box-shadow: inset 1px 1px 12px 2px darkgreen;
+#deptname3 {
+  text-align: center;
+  font-size: 1.7rem;
+  border: 2px solid darkgreen;
+  background-color: #5ed95e;
+  color: #104805;
+  box-shadow: inset 1px 1px 12px 2px darkgreen;
 }
 
-.department div:nth-child(2){
-    font-size: 1.2rem;
-    text-align: justify;
-    padding: 5px 8px;
-    background-color: #178317;
-    /* border: 2px solid #5ed95e; */
-    color: white;
-    height: inherit;
+.department div:nth-child(2) {
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 5px 8px;
+  background-color: #178317;
+  /* border: 2px solid #5ed95e; */
+  color: white;
+  height: inherit;
 }
 
 /* Footer section */
-footer{
-    border: 2px solid none;
-    background-color: #232325;
-    color: white;
+footer {
+  border: 2px solid none;
+  background-color: #232325;
+  color: white;
 }
 
-footer span{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+footer span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-footer span ul{
-    display: flex;
-    flex-direction: row;
-    margin-left: 89px;
+footer span ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: 89px;
 }
 
-footer span ul li{
-    list-style: none;
-    margin: 29px 52px 29px 0px;
-    font-size: 1.4rem;
+footer span ul li {
+  list-style: none;
+  margin: 29px 52px 29px 0px;
+  font-size: 1.4rem;
 }
 
-footer span ul li a{
-    text-decoration: none;
-    color: white;
+footer span ul li a {
+  text-decoration: none;
+  color: white;
 }
 
-footer span ul li a:hover{
-    color: rgb(34, 141, 177);
+footer span ul li a:hover {
+  color: rgb(34, 141, 177);
 }
 
-footer span b{
-    color: white;
-    margin: 2px 0px;
-    font-size: 1.2rem;
+footer span b {
+  color: white;
+  margin: 2px 0px;
+  font-size: 1.2rem;
 }
 
-
-footer span p{
-    text-align: center;
-    font-size: 1.2rem;
-    margin: 14px 0px 5px 31px;
+footer span p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 14px 0px 5px 31px;
 }
 
-footer #social i{
-    margin: 15px;
+footer #social i {
+  margin: 15px;
 }
 
-footer #social a{
-    text-decoration: none;
-    color: white;
+footer #social a {
+  text-decoration: none;
+  color: white;
 }
 
-footer #social a:hover{
-    color: rgb(34, 141, 177);
+footer #social a:hover {
+  color: rgb(34, 141, 177);
 }
