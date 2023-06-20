@@ -1,211 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="department.css" />
+    <link
+      rel="shortcut icon"
+      href="Medical-health-logo-design-on-transparent-background-PNG.jpg"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap"
+      rel="stylesheet"
+    />
+    <title>City Hospital | Departments</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="department.css">
-    <link rel="shortcut icon" href="Medical-health-logo-design-on-transparent-background-PNG.jpg" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
-    <title>Departments</title>
-</head>
-
-<body>
+  <body>
     <header>
-        <nav>
-            <span id="icon">
-                <a href="/index.html"><img src="Medical-health-logo-design-on-transparent-background-PNG.jpg"
-                        alt="City Hospital"></a>
-            </span>
-            <span id="name">City Hospital</span>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="index.html#about
-                    " target="blank">About Us</a></li>
-                <li>
-                    <a href="index.html#service" target="blank">
-                        Services
-                    </a>
-                </li>
-                <li>
-                    <a href="/department.html" target="blank"><button class="hover" onmousedown="hoverout2()"
-                            onmouseover="hoverin2()">
-                            Departments
-                        </button>
-                    </a>
-                    <div id="hovercontent2">
-                        <a href="#box1" onclick="blockinsert1()">Neurology</a>
-                        <a href="#box2" onclick="blockinsert2()">Cardiology</a>
-                        <a href="#box3" onclick="blockinsert3()">Psychiatry</a>
-                    </div>
-
-                </li>
-                <li><a href="/contact.html" target="blank">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <span id="icon">
+          <a href="/index.html"
+            ><img
+              src="Medical-health-logo-design-on-transparent-background-PNG.jpg"
+              alt="City Hospital"
+          /></a>
+          <span id="menu" onclick="show()"
+            ><i class="fas fa-bars fa-2x" id="dropdown"></i
+          ></span>
+          <span id="cross" onclick="cancel()"
+            ><i class="fas fa-times fa-2x" id="cancel"></i
+          ></span>
+        </span>
+        <span id="name">City Hospital</span>
+        <ul id="tabs">
+          <a href="/index.html">
+            <li>Home</li>
+          </a>
+          <a
+            href="#about
+                    "
+          >
+            <li>About Us</li>
+          </a>
+          <a href="#service">
+            <li>Services</li>
+          </a>
+          <!-- <a href="/department.html" target="blank"> -->
+          <li>
+            <div class="hover" onclick="toggle()">
+              Departments
+              <i
+                class="fas fa-caret-down"
+                style="color: red; display: inline"
+              ></i>
+              <i class="fas fa-caret-up" style="color: red; display: none"></i>
+            </div>
+          </li>
+          <!-- </a> -->
+          <div id="hovercontent2">
+            <a
+              href="./department.html#box1"
+              onclick="blockinsert1()"
+              target="blank"
+              >Neurology</a
+            >
+            <a
+              href="./department.html#box2"
+              onclick="blockinsert2()"
+              target="blank"
+              >Cardiology</a
+            >
+            <a
+              href="./department.html#box3"
+              onclick="blockinsert3()"
+              target="blank"
+              >Psychiatry</a
+            >
+          </div>
+          <a href="/contact.html" target="blank"><li>Contact</li></a>
+        </ul>
+      </nav>
     </header>
 
     <div id="box1" class="content">
-        <p>
-            Neurology (from Greek: νεῦρον (neûron), "string, nerve" and the suffix -logia, "study of") is a branch of medicine dealing with disorders of the nervous system. Neurology deals with the diagnosis and treatment of all categories of conditions and disease involving the central and peripheral nervous systems (and their subdivisions, the autonomic and somatic nervous systems), including their coverings, blood vessels, and all effector tissue, such as muscle. Neurological practice relies heavily on the field of neuroscience, the scientific study of the nervous system.
-            <br>
-            <br>
-            A neurologist is a physician specializing in neurology and trained to investigate, or diagnose and treat neurological disorders. Neurologists treat a myriad of neurologic conditions, including stroke, seizures, movement disorders such as Parkinson's disease, autoimmune neurologic disorders such as multiple sclerosis, headache disorders like migraine and dementias such as Alzheimer's disease. Neurologists may also be involved in clinical research, clinical trials, and basic or translational research. While neurology is a nonsurgical specialty, its corresponding surgical specialty is neurosurgery.
-            <br>
-            <br>
-            Many neurologists also have additional training or interest in one area of neurology, such as stroke, epilepsy, headache, neuromuscular disorders, sleep medicine, pain management, or movement disorders.
-            <br>
-            <br>
-            In the United States and Canada, neurologists are physicians who have completed a postgraduate training period known as residency specializing in neurology after graduation from medical school. This additional training period typically lasts four years, with the first year devoted to training in internal medicine. On average, neurologists complete a total of eight to ten years of training. This includes four years of medical school, four years of residency and an optional one to two years of fellowship.
-            <br>
-            <br>
-            While neurologists may treat general neurologic conditions, some neurologists go on to receive additional training focusing on a particular subspecialty in the field of neurology. These training programs are called fellowships, and are one to two years in duration. Subspecialties include brain injury medicine, clinical neurophysiology, epilepsy, neurodevelopmental disabilities, neuromuscular medicine, pain medicine, sleep medicine, neurocritical care, vascular neurology (stroke), behavioral neurology, child neurology, headache, multiple sclerosis, neuroimaging, neurooncology, and neurorehabilitation.
-            <br>
-            <br>
-            In Germany, a compulsory year of psychiatry must be done to complete a residency of neurology.
-            <br>
-            <br>
-            In the United Kingdom and Ireland, neurology is a subspecialty of general (internal) medicine. After five years of medical school and two years as a Foundation Trainee, an aspiring neurologist must pass the examination for Membership of the Royal College of Physicians (or the Irish equivalent) and complete two years of core medical training before entering specialist training in neurology.Up to the 1960s, some intending to become neurologists would also spend two years working in psychiatric units before obtaining a diploma in psychological medicine. However, that was uncommon and, now that the MRCPsych takes three years to obtain, would no longer be practical. A period of research is essential, and obtaining a higher degree aids career progression. Many found it was eased after an attachment to the Institute of Neurology at Queen Square, London. Some neurologists enter the field of rehabilitation medicine (known as physiatry in the US) to specialise in neurological rehabilitation, which may include stroke medicine, as well as traumatic brain injuries
-        </p>
+      <p>
+        Neurology (from Greek: νεῦρον (neûron), "string, nerve" and the suffix
+        -logia, "study of") is a branch of medicine dealing with disorders of
+        the nervous system. Neurology deals with the diagnosis and treatment of
+        all categories of conditions and disease involving the central and
+        peripheral nervous systems (and their subdivisions, the autonomic and
+        somatic nervous systems), including their coverings, blood vessels, and
+        all effector tissue, such as muscle. Neurological practice relies
+        heavily on the field of neuroscience, the scientific study of the
+        nervous system.
+        <br />
+        <br />
+        A neurologist is a physician specializing in neurology and trained to
+        investigate, or diagnose and treat neurological disorders. Neurologists
+        treat a myriad of neurologic conditions, including stroke, seizures,
+        movement disorders such as Parkinson's disease, autoimmune neurologic
+        disorders such as multiple sclerosis, headache disorders like migraine
+        and dementias such as Alzheimer's disease. Neurologists may also be
+        involved in clinical research, clinical trials, and basic or
+        translational research. While neurology is a nonsurgical specialty, its
+        corresponding surgical specialty is neurosurgery.
+        <br />
+        <br />
+        Many neurologists also have additional training or interest in one area
+        of neurology, such as stroke, epilepsy, headache, neuromuscular
+        disorders, sleep medicine, pain management, or movement disorders.
+        <br />
+        <br />
+        In the United States and Canada, neurologists are physicians who have
+        completed a postgraduate training period known as residency specializing
+        in neurology after graduation from medical school. This additional
+        training period typically lasts four years, with the first year devoted
+        to training in internal medicine. On average, neurologists complete a
+        total of eight to ten years of training. This includes four years of
+        medical school, four years of residency and an optional one to two years
+        of fellowship.
+        <br />
+        <br />
+        While neurologists may treat general neurologic conditions, some
+        neurologists go on to receive additional training focusing on a
+        particular subspecialty in the field of neurology. These training
+        programs are called fellowships, and are one to two years in duration.
+        Subspecialties include brain injury medicine, clinical neurophysiology,
+        epilepsy, neurodevelopmental disabilities, neuromuscular medicine, pain
+        medicine, sleep medicine, neurocritical care, vascular neurology
+        (stroke), behavioral neurology, child neurology, headache, multiple
+        sclerosis, neuroimaging, neurooncology, and neurorehabilitation.
+        <br />
+        <br />
+        In Germany, a compulsory year of psychiatry must be done to complete a
+        residency of neurology.
+        <br />
+        <br />
+        In the United Kingdom and Ireland, neurology is a subspecialty of
+        general (internal) medicine. After five years of medical school and two
+        years as a Foundation Trainee, an aspiring neurologist must pass the
+        examination for Membership of the Royal College of Physicians (or the
+        Irish equivalent) and complete two years of core medical training before
+        entering specialist training in neurology.Up to the 1960s, some
+        intending to become neurologists would also spend two years working in
+        psychiatric units before obtaining a diploma in psychological medicine.
+        However, that was uncommon and, now that the MRCPsych takes three years
+        to obtain, would no longer be practical. A period of research is
+        essential, and obtaining a higher degree aids career progression. Many
+        found it was eased after an attachment to the Institute of Neurology at
+        Queen Square, London. Some neurologists enter the field of
+        rehabilitation medicine (known as physiatry in the US) to specialise in
+        neurological rehabilitation, which may include stroke medicine, as well
+        as traumatic brain injuries
+      </p>
     </div>
     <div id="box2" class="content">
-        <p>
-            Cardiology (from Greek καρδίᾱ kardiā, "heart" and -λογία -logia, "study") is a branch of medicine that deals with disorders of the heart and the cardiovascular system. The field includes medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease and electrophysiology. Physicians who specialize in this field of medicine are called cardiologists, a specialty of internal medicine. Pediatric cardiologists are pediatricians who specialize in cardiology. Physicians who specialize in cardiac surgery are called cardiothoracic surgeons or cardiac surgeons, a specialty of general surgery.
-            <br>
-            <br>
-            Cardiology is a specialty of internal medicine. To be a cardiologist in the United States, a three-year residency in internal medicine is followed by a three-year fellowship in cardiology. It is possible to specialize further in a sub-specialty. Recognized sub-specialties in the United States by the ACGME are cardiac electrophysiology, echocardiography, interventional cardiology, and nuclear cardiology. Recognized subspecialties in the United States by the American Osteopathic Association Bureau of Osteopathic Specialists (AOABOS) include clinical cardiac electrophysiology and interventional cardiology. While in India, a person needs to undergo three years of residency in General Medicine or Pediatrics after M.B.B.S and then three years of residency in Cardiology to be a D.M/Diplomate of National Board (DNB) in Cardiology.
-            <br>
-            <br>
-            Cardiac electrophysiology is the science of elucidating, diagnosing, and treating the electrical activities of the heart. The term is usually used to describe studies of such phenomena by invasive (intracardiac) catheter recording of spontaneous activity as well as of cardiac responses to programmed electrical stimulation (PES). These studies are performed to assess complex arrhythmias, elucidate symptoms, evaluate abnormal electrocardiograms, assess risk of developing arrhythmias in the future, and design treatment. These procedures increasingly include therapeutic methods (typically radiofrequency ablation, or cryoablation) in addition to diagnostic and prognostic procedures. Other therapeutic modalities employed in this field include antiarrhythmic drug therapy and implantation of pacemakers and automatic implantable cardioverter-defibrillators (AICD).
-            <br>
-            <br>
-            The cardiac electrophysiology study (EPS) typically measures the response of the injured or cardiomyopathic myocardium to PES on specific pharmacological regimens in order to assess the likelihood that the regimen will successfully prevent potentially fatal sustained ventricular tachycardia (VT) or ventricular fibrillation (VF) in the future. Sometimes a series of EPS drug trials must be conducted to enable the cardiologist to select the one regimen for long-term treatment that best prevents or slows the development of VT or VF following PES. Such studies may also be conducted in the presence of a newly implanted or newly replaced cardiac pacemaker or AICD.
-            <br>
-            <br>
-            Clinical cardiac electrophysiology is a branch of the medical specialty of cardiology and is concerned with the study and treatment of rhythm disorders of the heart. Cardiologists with expertise in this area are usually referred to as electrophysiologists. Electrophysiologists are trained in the mechanism, function, and performance of the electrical activities of the heart. Electrophysiologists work closely with other cardiologists and cardiac surgeons to assist or guide therapy for heart rhythm disturbances (arrhythmias). They are trained to perform interventional and surgical procedures to treat cardiac arrhythmia.
-        </p>
+      <p>
+        Cardiology (from Greek καρδίᾱ kardiā, "heart" and -λογία -logia,
+        "study") is a branch of medicine that deals with disorders of the heart
+        and the cardiovascular system. The field includes medical diagnosis and
+        treatment of congenital heart defects, coronary artery disease, heart
+        failure, valvular heart disease and electrophysiology. Physicians who
+        specialize in this field of medicine are called cardiologists, a
+        specialty of internal medicine. Pediatric cardiologists are
+        pediatricians who specialize in cardiology. Physicians who specialize in
+        cardiac surgery are called cardiothoracic surgeons or cardiac surgeons,
+        a specialty of general surgery.
+        <br />
+        <br />
+        Cardiology is a specialty of internal medicine. To be a cardiologist in
+        the United States, a three-year residency in internal medicine is
+        followed by a three-year fellowship in cardiology. It is possible to
+        specialize further in a sub-specialty. Recognized sub-specialties in the
+        United States by the ACGME are cardiac electrophysiology,
+        echocardiography, interventional cardiology, and nuclear cardiology.
+        Recognized subspecialties in the United States by the American
+        Osteopathic Association Bureau of Osteopathic Specialists (AOABOS)
+        include clinical cardiac electrophysiology and interventional
+        cardiology. While in India, a person needs to undergo three years of
+        residency in General Medicine or Pediatrics after M.B.B.S and then three
+        years of residency in Cardiology to be a D.M/Diplomate of National Board
+        (DNB) in Cardiology.
+        <br />
+        <br />
+        Cardiac electrophysiology is the science of elucidating, diagnosing, and
+        treating the electrical activities of the heart. The term is usually
+        used to describe studies of such phenomena by invasive (intracardiac)
+        catheter recording of spontaneous activity as well as of cardiac
+        responses to programmed electrical stimulation (PES). These studies are
+        performed to assess complex arrhythmias, elucidate symptoms, evaluate
+        abnormal electrocardiograms, assess risk of developing arrhythmias in
+        the future, and design treatment. These procedures increasingly include
+        therapeutic methods (typically radiofrequency ablation, or cryoablation)
+        in addition to diagnostic and prognostic procedures. Other therapeutic
+        modalities employed in this field include antiarrhythmic drug therapy
+        and implantation of pacemakers and automatic implantable
+        cardioverter-defibrillators (AICD).
+        <br />
+        <br />
+        The cardiac electrophysiology study (EPS) typically measures the
+        response of the injured or cardiomyopathic myocardium to PES on specific
+        pharmacological regimens in order to assess the likelihood that the
+        regimen will successfully prevent potentially fatal sustained
+        ventricular tachycardia (VT) or ventricular fibrillation (VF) in the
+        future. Sometimes a series of EPS drug trials must be conducted to
+        enable the cardiologist to select the one regimen for long-term
+        treatment that best prevents or slows the development of VT or VF
+        following PES. Such studies may also be conducted in the presence of a
+        newly implanted or newly replaced cardiac pacemaker or AICD.
+        <br />
+        <br />
+        Clinical cardiac electrophysiology is a branch of the medical specialty
+        of cardiology and is concerned with the study and treatment of rhythm
+        disorders of the heart. Cardiologists with expertise in this area are
+        usually referred to as electrophysiologists. Electrophysiologists are
+        trained in the mechanism, function, and performance of the electrical
+        activities of the heart. Electrophysiologists work closely with other
+        cardiologists and cardiac surgeons to assist or guide therapy for heart
+        rhythm disturbances (arrhythmias). They are trained to perform
+        interventional and surgical procedures to treat cardiac arrhythmia.
+      </p>
     </div>
     <div id="box3" class="content">
-        <p>
-            Psychiatry refers to a field of medicine focused specifically on the mind, aiming to study, prevent, and treat mental disorders in humans. It has been described as an intermediary between the world from a social context and the world from the perspective of those who are mentally ill.
-            <br>
-            <br>
-            Psychiatry is the medical specialty devoted to the diagnosis, prevention, and treatment of mental disorders. These include various maladaptations related to mood, behaviour, cognition, and perceptions.
-            <br>
-            <br>
-            Initial psychiatric assessment of a person typically begins with a case history and mental status examination. Physical examinations and psychological tests may be conducted. On occasion, neuroimaging or other neurophysiological techniques are used. Mental disorders are often diagnosed in accordance with clinical concepts listed in diagnostic manuals such as the International Classification of Diseases (ICD), edited and used by the World Health Organization (WHO) and the widely used Diagnostic and Statistical Manual of Mental Disorders (DSM), published by the American Psychiatric Association (APA). The fifth edition of the DSM (DSM-5) was published in May 2013 which re-organized the larger categories of various diseases and expanded upon the previous edition to include information/insights that are consistent with current research.
-            <br>
-            <br>
-            Combined treatment with psychiatric medication and psychotherapy has become the most common mode of psychiatric treatment in current practice, but contemporary practice also includes a wide variety of other modalities, e.g., assertive community treatment, community reinforcement, and supported employment. Treatment may be delivered on an inpatient or outpatient basis, depending on the severity of functional impairment or on other aspects of the disorder in question. An inpatient may be treated in a psychiatric hospital. Research within psychiatry as a whole is conducted on an interdisciplinary basis with other professionals, such as epidemiologists, nurses, social workers, occupational therapists, or clinical psychologists.
-            <br>
-            <br>
-            People who specialize in psychiatry often differ from most other mental health professionals and physicians in that they must be familiar with both the social and biological sciences. The discipline studies the operations of different organs and body systems as classified by the patient's subjective experiences and the objective physiology of the patient. Psychiatry treats mental disorders, which are conventionally divided into three general categories: mental illnesses, severe learning disabilities, and personality disorders. Although the focus of psychiatry has changed little over time, the diagnostic and treatment processes have evolved dramatically and continue to do so. Since the late 20th century, the field of psychiatry has continued to become more biological and less conceptually isolated from other medical fields.
-        </p>
+      <p>
+        Psychiatry refers to a field of medicine focused specifically on the
+        mind, aiming to study, prevent, and treat mental disorders in humans. It
+        has been described as an intermediary between the world from a social
+        context and the world from the perspective of those who are mentally
+        ill.
+        <br />
+        <br />
+        Psychiatry is the medical specialty devoted to the diagnosis,
+        prevention, and treatment of mental disorders. These include various
+        maladaptations related to mood, behaviour, cognition, and perceptions.
+        <br />
+        <br />
+        Initial psychiatric assessment of a person typically begins with a case
+        history and mental status examination. Physical examinations and
+        psychological tests may be conducted. On occasion, neuroimaging or other
+        neurophysiological techniques are used. Mental disorders are often
+        diagnosed in accordance with clinical concepts listed in diagnostic
+        manuals such as the International Classification of Diseases (ICD),
+        edited and used by the World Health Organization (WHO) and the widely
+        used Diagnostic and Statistical Manual of Mental Disorders (DSM),
+        published by the American Psychiatric Association (APA). The fifth
+        edition of the DSM (DSM-5) was published in May 2013 which re-organized
+        the larger categories of various diseases and expanded upon the previous
+        edition to include information/insights that are consistent with current
+        research.
+        <br />
+        <br />
+        Combined treatment with psychiatric medication and psychotherapy has
+        become the most common mode of psychiatric treatment in current
+        practice, but contemporary practice also includes a wide variety of
+        other modalities, e.g., assertive community treatment, community
+        reinforcement, and supported employment. Treatment may be delivered on
+        an inpatient or outpatient basis, depending on the severity of
+        functional impairment or on other aspects of the disorder in question.
+        An inpatient may be treated in a psychiatric hospital. Research within
+        psychiatry as a whole is conducted on an interdisciplinary basis with
+        other professionals, such as epidemiologists, nurses, social workers,
+        occupational therapists, or clinical psychologists.
+        <br />
+        <br />
+        People who specialize in psychiatry often differ from most other mental
+        health professionals and physicians in that they must be familiar with
+        both the social and biological sciences. The discipline studies the
+        operations of different organs and body systems as classified by the
+        patient's subjective experiences and the objective physiology of the
+        patient. Psychiatry treats mental disorders, which are conventionally
+        divided into three general categories: mental illnesses, severe learning
+        disabilities, and personality disorders. Although the focus of
+        psychiatry has changed little over time, the diagnostic and treatment
+        processes have evolved dramatically and continue to do so. Since the
+        late 20th century, the field of psychiatry has continued to become more
+        biological and less conceptually isolated from other medical fields.
+      </p>
     </div>
 
     <section id="block">
-        <div id="dept">
-            <a href="#box1" onclick="blockinsert1()"><h2>Neurology</h2></a>
-            <a href="#box2" onclick="blockinsert2()"><h2>Cardiology</h2></a>
-            <a href="#box3" onclick="blockinsert3()"><h2>Psychiatry</h2></a>
-        </div>
-        <div id="insertcontent">
-            <p>
-                Neurology (from Greek: νεῦρον (neûron), "string, nerve" and the suffix -logia, "study of") is a branch of medicine dealing with disorders of the nervous system. Neurology deals with the diagnosis and treatment of all categories of conditions and disease involving the central and peripheral nervous systems (and their subdivisions, the autonomic and somatic nervous systems), including their coverings, blood vessels, and all effector tissue, such as muscle. Neurological practice relies heavily on the field of neuroscience, the scientific study of the nervous system.
-                <br>
-                <br>
-                A neurologist is a physician specializing in neurology and trained to investigate, or diagnose and treat neurological disorders. Neurologists treat a myriad of neurologic conditions, including stroke, seizures, movement disorders such as Parkinson's disease, autoimmune neurologic disorders such as multiple sclerosis, headache disorders like migraine and dementias such as Alzheimer's disease. Neurologists may also be involved in clinical research, clinical trials, and basic or translational research. While neurology is a nonsurgical specialty, its corresponding surgical specialty is neurosurgery.
-                <br>
-                <br>
-                Many neurologists also have additional training or interest in one area of neurology, such as stroke, epilepsy, headache, neuromuscular disorders, sleep medicine, pain management, or movement disorders.
-                <br>
-                <br>
-                In the United States and Canada, neurologists are physicians who have completed a postgraduate training period known as residency specializing in neurology after graduation from medical school. This additional training period typically lasts four years, with the first year devoted to training in internal medicine. On average, neurologists complete a total of eight to ten years of training. This includes four years of medical school, four years of residency and an optional one to two years of fellowship.
-                <br>
-                <br>
-                While neurologists may treat general neurologic conditions, some neurologists go on to receive additional training focusing on a particular subspecialty in the field of neurology. These training programs are called fellowships, and are one to two years in duration. Subspecialties include brain injury medicine, clinical neurophysiology, epilepsy, neurodevelopmental disabilities, neuromuscular medicine, pain medicine, sleep medicine, neurocritical care, vascular neurology (stroke), behavioral neurology, child neurology, headache, multiple sclerosis, neuroimaging, neurooncology, and neurorehabilitation.
-                <br>
-                <br>
-                In Germany, a compulsory year of psychiatry must be done to complete a residency of neurology.
-                <br>
-                <br>
-                In the United Kingdom and Ireland, neurology is a subspecialty of general (internal) medicine. After five years of medical school and two years as a Foundation Trainee, an aspiring neurologist must pass the examination for Membership of the Royal College of Physicians (or the Irish equivalent) and complete two years of core medical training before entering specialist training in neurology.Up to the 1960s, some intending to become neurologists would also spend two years working in psychiatric units before obtaining a diploma in psychological medicine. However, that was uncommon and, now that the MRCPsych takes three years to obtain, would no longer be practical. A period of research is essential, and obtaining a higher degree aids career progression. Many found it was eased after an attachment to the Institute of Neurology at Queen Square, London. Some neurologists enter the field of rehabilitation medicine (known as physiatry in the US) to specialise in neurological rehabilitation, which may include stroke medicine, as well as traumatic brain injuries
-            </p>
-        </div>
-        
+      <div id="dept">
+        <a href="#box1" onclick="blockinsert1()"><h2>Neurology</h2></a>
+        <a href="#box2" onclick="blockinsert2()"><h2>Cardiology</h2></a>
+        <a href="#box3" onclick="blockinsert3()"><h2>Psychiatry</h2></a>
+      </div>
+      <div id="insertcontent">
+        <p>
+          Neurology (from Greek: νεῦρον (neûron), "string, nerve" and the suffix
+          -logia, "study of") is a branch of medicine dealing with disorders of
+          the nervous system. Neurology deals with the diagnosis and treatment
+          of all categories of conditions and disease involving the central and
+          peripheral nervous systems (and their subdivisions, the autonomic and
+          somatic nervous systems), including their coverings, blood vessels,
+          and all effector tissue, such as muscle. Neurological practice relies
+          heavily on the field of neuroscience, the scientific study of the
+          nervous system.
+          <br />
+          <br />
+          A neurologist is a physician specializing in neurology and trained to
+          investigate, or diagnose and treat neurological disorders.
+          Neurologists treat a myriad of neurologic conditions, including
+          stroke, seizures, movement disorders such as Parkinson's disease,
+          autoimmune neurologic disorders such as multiple sclerosis, headache
+          disorders like migraine and dementias such as Alzheimer's disease.
+          Neurologists may also be involved in clinical research, clinical
+          trials, and basic or translational research. While neurology is a
+          nonsurgical specialty, its corresponding surgical specialty is
+          neurosurgery.
+          <br />
+          <br />
+          Many neurologists also have additional training or interest in one
+          area of neurology, such as stroke, epilepsy, headache, neuromuscular
+          disorders, sleep medicine, pain management, or movement disorders.
+          <br />
+          <br />
+          In the United States and Canada, neurologists are physicians who have
+          completed a postgraduate training period known as residency
+          specializing in neurology after graduation from medical school. This
+          additional training period typically lasts four years, with the first
+          year devoted to training in internal medicine. On average,
+          neurologists complete a total of eight to ten years of training. This
+          includes four years of medical school, four years of residency and an
+          optional one to two years of fellowship.
+          <br />
+          <br />
+          While neurologists may treat general neurologic conditions, some
+          neurologists go on to receive additional training focusing on a
+          particular subspecialty in the field of neurology. These training
+          programs are called fellowships, and are one to two years in duration.
+          Subspecialties include brain injury medicine, clinical
+          neurophysiology, epilepsy, neurodevelopmental disabilities,
+          neuromuscular medicine, pain medicine, sleep medicine, neurocritical
+          care, vascular neurology (stroke), behavioral neurology, child
+          neurology, headache, multiple sclerosis, neuroimaging, neurooncology,
+          and neurorehabilitation.
+          <br />
+          <br />
+          In Germany, a compulsory year of psychiatry must be done to complete a
+          residency of neurology.
+          <br />
+          <br />
+          In the United Kingdom and Ireland, neurology is a subspecialty of
+          general (internal) medicine. After five years of medical school and
+          two years as a Foundation Trainee, an aspiring neurologist must pass
+          the examination for Membership of the Royal College of Physicians (or
+          the Irish equivalent) and complete two years of core medical training
+          before entering specialist training in neurology.Up to the 1960s, some
+          intending to become neurologists would also spend two years working in
+          psychiatric units before obtaining a diploma in psychological
+          medicine. However, that was uncommon and, now that the MRCPsych takes
+          three years to obtain, would no longer be practical. A period of
+          research is essential, and obtaining a higher degree aids career
+          progression. Many found it was eased after an attachment to the
+          Institute of Neurology at Queen Square, London. Some neurologists
+          enter the field of rehabilitation medicine (known as physiatry in the
+          US) to specialise in neurological rehabilitation, which may include
+          stroke medicine, as well as traumatic brain injuries
+        </p>
+      </div>
     </section>
 
     <footer>
-        <span>
-            <ul>
-                <li><a href="/index.html"> Home</a></li>
-                <li><a href="index.html#about" target="blank"> About Us</a></li>
-                <li><a href="index.html#service" target="blank"> Services</a></li>
-                <li><a href="/department.html" target="blank"> Departments</a></li>
-                <li><a href="/contact.html" target="blank"> Contact</a></li>
-            </ul>
-            <a href="/index.html"><img src="Medical-health-logo-design-on-transparent-background-PNG.jpg"
-                    alt="City Hospital"></a>
-            <p>
-                Contact: 8925364856 <br>
-                Email: cityhospital@gmail.com
-            </p>
-            <div id="social">
-                <a href="https://www.facebook.com/pages/City-Hospital-Kurla/937248286290862" target="blank"><i
-                        class="fa fa-2x fa-facebook"></i></a>
-                <a href="https://www.instagram.com/explore/locations/1017621405/city-hospital-kurla/" target="blank"><i
-                        class="fa fa-2x fa-instagram"></i></a>
-                <a href="https://www.youtube.com/channel/UCax57ksJvzN_phiF3QqUgXg/about" target="blank"><i
-                        class="fa fa-2x fa-youtube"></i></a>
-            </div>
-            <b>Copyright &copy;City Hospital</b>
-        </span>
+      <span>
+        <ul>
+          <li><a href="/index.html"> Home</a></li>
+          <li><a href="index.html#about" target="blank"> About Us</a></li>
+          <li><a href="index.html#service" target="blank"> Services</a></li>
+          <li><a href="/department.html" target="blank"> Departments</a></li>
+          <li><a href="/contact.html" target="blank"> Contact</a></li>
+        </ul>
+        <a href="/index.html"
+          ><img
+            src="Medical-health-logo-design-on-transparent-background-PNG.jpg"
+            alt="City Hospital"
+        /></a>
+        <p>
+          Contact: 8925364856 <br />
+          Email: cityhospital@gmail.com
+        </p>
+        <div id="social">
+          <a
+            href="https://www.facebook.com/pages/City-Hospital-Kurla/937248286290862"
+            target="blank"
+            ><i class="fa fa-2x fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/explore/locations/1017621405/city-hospital-kurla/"
+            target="blank"
+            ><i class="fa fa-2x fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCax57ksJvzN_phiF3QqUgXg/about"
+            target="blank"
+            ><i class="fa fa-2x fa-youtube"></i
+          ></a>
+        </div>
+        <b>Copyright &copy;City Hospital</b>
+      </span>
     </footer>
     <script>
+      // let hover = document.getElementsByClassName('hover');
+      let hovercontent2 = document.getElementById("hovercontent2");
+      let section1 = document.getElementById("section1");
+      let caretdown = document.getElementsByClassName("fa-caret-down")[0];
+      let caretup = document.getElementsByClassName("fa-caret-up")[0];
+      let tabs = document.getElementById("tabs");
+      let menu = document.getElementById("menu");
+      let cross = document.getElementById("cross");
 
-        // let hover = document.getElementsByClassName('hover');
-        let hovercontent2 = document.getElementById('hovercontent2');
-        let section1 = document.getElementById('section1');
-
-        function hoverin2() {
-            hovercontent2.style.display = 'flex';
+      function toggle() {
+        if (hovercontent2.style.display != "flex") {
+          hovercontent2.style.display = "flex";
+          caretdown.style.display = "none";
+          caretup.style.display = "inline";
+        } else if (hovercontent2.style.display != "none") {
+          hovercontent2.style.display = "none";
+          caretdown.style.display = "inline";
+          caretup.style.display = "none";
         }
+      }
 
-        function hoverout2() {
-            hovercontent2.style.display = 'none';
+      function show() {
+        if (tabs.style.display != "flex") {
+          tabs.style.display = "flex";
+          menu.style.display = "none";
+          cross.style.display = "flex";
         }
+      }
 
-        window.onclick = () => {
-            if (hovercontent2.style.display != 'none') {
-                hovercontent2.style.display = 'none';
-            }
+      function cancel() {
+        if (tabs.style.display != "none") {
+          tabs.style.display = "none";
+          menu.style.display = "flex";
+          cross.style.display = "none";
         }
+      }
 
-        let box1 = document.getElementById('box1');
-        let box2 = document.getElementById('box2');
-        let box3 = document.getElementById('box3');
-        let content = document.getElementById('insertcontent');
+      let box1 = document.getElementById("box1");
+      let box2 = document.getElementById("box2");
+      let box3 = document.getElementById("box3");
+      let content = document.getElementById("insertcontent");
 
-        function blockinsert1(){
-            content.innerHTML = box1.innerHTML;
-        }
+      function blockinsert1() {
+        content.innerHTML = box1.innerHTML;
+      }
 
-        function blockinsert2(){
-            content.innerHTML = box2.innerHTML;
-        }
+      function blockinsert2() {
+        content.innerHTML = box2.innerHTML;
+      }
 
-        function blockinsert3(){
-            content.innerHTML = box3.innerHTML;
-        }
-
-
+      function blockinsert3() {
+        content.innerHTML = box3.innerHTML;
+      }
     </script>
-    <script src="https://kit.fontawesome.com/5fa829b1c9.js" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/5fa829b1c9.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

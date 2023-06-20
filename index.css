@@ -3,54 +3,8 @@
   padding: 0;
 }
 
-@media only screen and (max-width: 800px) {
-  img[alt="City Hospital"] {
-    height: 53px;
-    width: 60px;
-  }
-
-  #name {
-    font-size: 1.2rem;
-  }
-
-  #menu {
-    display: flex;
-    margin: 4px 4px 4px 858px;
-  }
-
-  header nav {
-    display: flex;
-    padding: 0;
-    align-items: center;
-    flex-direction: column;
-    height: fit-content;
-  }
-
-  #name {
-    display: block;
-    height: 42px;
-    width: 100%;
-    padding: 0;
-    text-align: center;
-  }
-
-  header nav #tabs {
-    flex-direction: column;
-    background-color: violet;
-    width: 100%;
-    align-items: center;
-  }
-
-  header nav #tabs a {
-    color: white;
-  }
-
-  #tabs .hover {
-    color: white;
-  }
-}
-
-#Nav section #icon {
+/* Navigation*/
+#icon {
   margin: 4px 7px 0 22px;
 }
 
@@ -82,6 +36,12 @@ img[alt="City Hospital"] {
 
 #cross {
   display: none;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100px;
+  margin: 4px;
+  cursor: pointer;
 }
 
 #dropdown {
@@ -105,14 +65,13 @@ header nav #tabs {
 }
 
 header nav #tabs a {
-  margin: 0 5px;
+  margin: 0 12px;
   font-size: 1.2rem;
   color: #9696b9;
   border: 2px solid none;
   text-decoration: none;
   box-sizing: border-box;
-  border-radius: 30px;
-  width: 96px;
+  width: max-content;
   text-align: center;
   font-family: "Baloo Bhaijaan 2", cursive;
 }
@@ -137,10 +96,14 @@ header nav #tabs a li button:hover {
   position: relative;
 }
 
+#tabs .hover:hover {
+  color: red;
+}
+
 #tabs #hovercontent2 {
   display: none;
   flex-direction: column;
-  margin: 22px 0px 0px 315px;
+  margin: 35px 0px 0px 254px;
   position: absolute;
   z-index: 1;
 }
@@ -155,27 +118,19 @@ header nav #tabs a li button:hover {
 
 #tabs #hovercontent2 a {
   display: block;
-  border: 2px solid #c79d9d;
+  border: 1px solid #e7d8d8;
   width: 174px;
-  color: white;
-  background-color: #d4b8b8;
+  padding-left: 17px;
+  border-bottom: none;
+  color: black;
+  background-color: white;
   text-decoration: none;
+  text-align: initial;
+  font-size: 1.1rem;
 }
 
 #tabs #hovercontent2 a:hover {
-  color: white;
-  background-color: rgb(128, 92, 92);
-}
-
-/* Dropdown section */
-
-header nav > button {
-  position: absolute;
-  border: 2px solid red;
-  margin: 0px 0px 0px 191px;
-  background-color: transparent;
-  cursor: pointer;
-  display: none;
+  background-color: rgb(243, 232, 232);
 }
 
 /* Container  */
@@ -251,7 +206,7 @@ hr {
   content: " ";
   display: block;
   position: absolute;
-  height: 117%;
+  height: 544px;
   width: 100%;
   z-index: -1;
   opacity: 0.4;
@@ -268,8 +223,8 @@ hr {
   align-items: center;
   justify-content: center;
   height: 544px;
+  width: 100%;
   color: black;
-  margin-bottom: 144px;
 }
 
 #about h2 {
@@ -313,7 +268,7 @@ hr {
 #service::before {
   content: " ";
   display: block;
-  height: 120%;
+  height: 783px;
   width: 100%;
   z-index: -1;
   opacity: 0.4;
@@ -326,6 +281,7 @@ hr {
 
 #service {
   display: flex;
+  height: 783px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -378,9 +334,7 @@ hr {
 #dept {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   flex-direction: column;
-  margin-top: 29px;
   padding: 25px 0px;
   background-color: lightblue;
 }
@@ -502,4 +456,131 @@ footer #social a {
 
 footer #social a:hover {
   color: rgb(34, 141, 177);
+}
+
+@media screen and (max-width: 600px) {
+  #icon {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: #90dae7;
+  }
+
+  img[alt="City Hospital"] {
+    height: 53px;
+    width: 60px;
+  }
+
+  #name {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+  }
+
+  body header nav {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  body header nav #tabs {
+    display: none;
+    flex-direction: column;
+    background-color: #e546e5;
+    width: 100%;
+    height: 100vh;
+  }
+
+  body header nav #tabs a {
+    color: white;
+  }
+
+  body #tabs .hover {
+    color: white;
+    margin: 0px 0px 8px 12px;
+  }
+
+  #tabs #hovercontent2 {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  #tabs #hovercontent2 a {
+    display: block;
+    border: none;
+    width: 96%;
+    padding-left: 17px;
+    color: white;
+    background-color: violet;
+    font-size: 1rem;
+  }
+
+  #tabs #hovercontent2 a:hover {
+    background-color: rgb(231 35 35);
+  }
+
+  body #intro {
+    width: 100%;
+    flex-direction: column;
+    color: #ff90dd;
+  }
+
+  body #intro h1 {
+    padding: 0px 0px 0px 20px;
+  }
+
+  body #intro span {
+    width: 100%;
+    background-color: #080121;
+    align-items: center;
+    padding: 0;
+  }
+
+  body #intro img {
+    width: 100%;
+  }
+
+  body #intro span pre {
+    text-align: left;
+  }
+
+  #appointment {
+    padding: 0px 0px 0px 25px;
+    align-items: normal;
+  }
+
+  #about {
+    height: 550px;
+  }
+
+  #about::before {
+    height: 550px;
+  }
+
+  #about h2 {
+    margin: 22px 0px;
+  }
+
+  .content {
+    width: 90%;
+    text-align: justify;
+    padding: 0;
+    margin: 5px 0px;
+    font-size: 1.1rem;
+  }
+
+  #service {
+    height: 841px;
+    width: 100%;
+  }
+
+  #service::before {
+    height: 841px;
+  }
 }

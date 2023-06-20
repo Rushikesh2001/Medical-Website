@@ -26,14 +26,14 @@
               src="Medical-health-logo-design-on-transparent-background-PNG.jpg"
               alt="City Hospital"
           /></a>
+          <span id="menu" onclick="show()"
+            ><i class="fas fa-bars fa-2x" id="dropdown"></i
+          ></span>
+          <span id="cross" onclick="cancel()"
+            ><i class="fas fa-times fa-2x" id="cancel"></i
+          ></span>
         </span>
         <span id="name">City Hospital</span>
-        <!-- <span id="menu" onclick="show()"
-          ><i class="fas fa-bars fa-2x" id="dropdown"></i
-        ></span>
-        <span id="cross" onclick="cancel()"
-          ><i class="fas fa-times fa-2x" id="cancel"></i
-        ></span> -->
         <ul id="tabs">
           <a href="/index.html">
             <li>Home</li>
@@ -47,17 +47,18 @@
           <a href="#service">
             <li>Services</li>
           </a>
-          <a href="/department.html" target="blank">
-            <li>
-              <button
-                class="hover"
-                onmousedown="hoverout2()"
-                onmouseover="hoverin2()"
-              >
-                Departments
-              </button>
-            </li>
-          </a>
+          <!-- <a href="/department.html" target="blank"> -->
+          <li>
+            <div class="hover" onclick="toggle()">
+              Departments
+              <i
+                class="fas fa-caret-down"
+                style="color: red; display: inline"
+              ></i>
+              <i class="fas fa-caret-up" style="color: red; display: none"></i>
+            </div>
+          </li>
+          <!-- </a> -->
           <div id="hovercontent2">
             <a
               href="./department.html#box1"
@@ -80,10 +81,6 @@
           </div>
           <a href="/contact.html" target="blank"><li>Contact</li></a>
         </ul>
-
-        <button onclick="dropdown()">
-          <i class="fa-solid fa-bars fa-2x"></i>
-        </button>
       </nav>
     </header>
     <div id="intro">
@@ -93,7 +90,7 @@
         <pre>We Save <b>Lives</b>,
 You make the <b>Difference</b></pre>
       </span>
-      <img src="medical_checkup.jpg" alt="Hospital" />
+      <img src="medical_checkup.jpg" width="900" height="578" alt="Hospital" />
     </div>
     <div id="appointment">
       <span
@@ -241,18 +238,25 @@ You make the <b>Difference</b></pre>
       </span>
     </footer>
     <script>
-      // let hover = document.getElementsByClassName('hover');
+      let tabs = document.getElementById("tabs");
+      let menu = document.getElementById("menu");
+      let cross = document.getElementById("cross");
       let hovercontent2 = document.getElementById("hovercontent2");
       let section1 = document.getElementById("section1");
       let dropdown2 = document.getElementById("dropdown2");
-      let dropdown = document.getElementById("dropdown");
+      let caretdown = document.getElementsByClassName("fa-caret-down")[0];
+      let caretup = document.getElementsByClassName("fa-caret-up")[0];
 
-      function hoverin2() {
-        hovercontent2.style.display = "flex";
-      }
-
-      function hoverout2() {
-        hovercontent2.style.display = "none";
+      function toggle() {
+        if (hovercontent2.style.display != "flex") {
+          hovercontent2.style.display = "flex";
+          caretdown.style.display = "none";
+          caretup.style.display = "inline";
+        } else if (hovercontent2.style.display != "none") {
+          hovercontent2.style.display = "none";
+          caretdown.style.display = "inline";
+          caretup.style.display = "none";
+        }
       }
 
       function hoverin3() {
@@ -260,30 +264,20 @@ You make the <b>Difference</b></pre>
         dropdown.style.margin = "333px 28px 0px 196px";
       }
 
-      window.onclick = () => {
-        if (hovercontent2.style.display != "none") {
-          hovercontent2.style.display = "none";
-        }
-
-        if (dropdown2.style.display != "none") {
-          dropdown2.style.display = "none";
-        }
-      };
-
       function show() {
-        let tabs = document.getElementById("tabs");
         if (tabs.style.display != "flex") {
           tabs.style.display = "flex";
+          menu.style.display = "none";
+          cross.style.display = "flex";
         }
-
-        // if (tabs.style.display != 'none'){
-        //     tabs.style.display = 'none';
-        // }
       }
 
       function cancel() {
-        let tabs = document.getElementsByTagName("ul");
-        tabs.style.display = "none";
+        if (tabs.style.display != "none") {
+          tabs.style.display = "none";
+          menu.style.display = "flex";
+          cross.style.display = "none";
+        }
       }
     </script>
     <script
