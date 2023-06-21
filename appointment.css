@@ -142,7 +142,7 @@ header nav #tabs a li button:hover {
   height: 100%;
   width: 99.7%;
   position: absolute;
-  background: url("/doc_appointment.jpg");
+  background: url("./doc_appointment.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
