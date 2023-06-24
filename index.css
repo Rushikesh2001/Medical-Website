@@ -4,9 +4,6 @@
 }
 
 /* Navigation*/
-#icon {
-  margin: 4px 7px 0 22px;
-}
 
 #name {
   display: flex;
@@ -206,7 +203,7 @@ hr {
   content: " ";
   display: block;
   position: absolute;
-  height: 544px;
+  height: 100%;
   width: 100%;
   z-index: -1;
   opacity: 0.4;
@@ -222,6 +219,7 @@ hr {
   border-top: 2px solid none;
   align-items: center;
   justify-content: center;
+  position: relative;
   height: 544px;
   width: 100%;
   color: black;
@@ -268,7 +266,7 @@ hr {
 #service::before {
   content: " ";
   display: block;
-  height: 783px;
+  height: 100%;
   width: 100%;
   z-index: -1;
   opacity: 0.4;
@@ -285,6 +283,7 @@ hr {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 #service #sblock {
@@ -493,6 +492,7 @@ footer #social a:hover {
     background-color: #e546e5;
     width: 100%;
     height: 100vh;
+    margin: 0;
   }
 
   body header nav #tabs a {
@@ -514,7 +514,7 @@ footer #social a:hover {
   #tabs #hovercontent2 a {
     display: block;
     border: none;
-    width: 96%;
+    width: 90%;
     padding-left: 17px;
     color: white;
     background-color: violet;
@@ -529,38 +529,57 @@ footer #social a:hover {
     width: 100%;
     flex-direction: column;
     color: #ff90dd;
+    height: fit-content;
   }
 
   body #intro h1 {
     padding: 0px 0px 0px 20px;
   }
 
+  body #intro h3 {
+    padding: 0px 0px 0px 20px;
+  }
+
   body #intro span {
     width: 100%;
     background-color: #080121;
+    text-wrap: balance;
+    min-height: 445px;
+    min-width: 240px;
+    height: fit-content;
     align-items: center;
     padding: 0;
   }
 
   body #intro img {
     width: 100%;
+    height: fit-content;
+    min-height: 350px;
   }
 
   body #intro span pre {
-    text-align: left;
+    text-wrap: balance;
   }
 
   #appointment {
-    padding: 0px 0px 0px 25px;
-    align-items: normal;
+    padding: 5px 5px 5px 25px;
+    align-items: center;
+    height: fit-content;
+    max-height: 189px;
+  }
+
+  #appointment span {
+    text-wrap: balance;
   }
 
   #about {
-    height: 550px;
+    position: relative;
+    height: fit-content;
   }
 
   #about::before {
-    height: 550px;
+    position: absolute;
+    height: 100%;
   }
 
   #about h2 {
@@ -576,11 +595,33 @@ footer #social a:hover {
   }
 
   #service {
-    height: 841px;
+    height: fit-content;
     width: 100%;
   }
 
-  #service::before {
-    height: 841px;
+  #service h2 {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+
+  #service #sblock {
+    grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+    grid-gap: 1em;
+    margin: 30px 0px;
+  }
+
+  #service .block {
+    height: fit-content;
+    width: 80%;
+    padding: 10px;
+  }
+
+  .title {
+    margin: 5px 0px;
+  }
+
+  #service .block div:nth-child(2) {
+    font-size: 1.1rem;
+    text-align: justify;
   }
 }
