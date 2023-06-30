@@ -130,6 +130,59 @@ header nav #tabs a li button:hover {
   background-color: rgb(243, 232, 232);
 }
 
+#dropdownlist {
+  display: none;
+  flex-direction: column;
+  margin: 2px 0px 0px 0px;
+  position: absolute;
+  z-index: 1;
+}
+
+#dropdownlist a:nth-child(2) {
+  border-top: none;
+}
+
+#dropdownlist a:nth-child(3) {
+  border-top: none;
+}
+
+#dropdownlist a {
+  display: block;
+  border: 1px solid #e7d8d8;
+  width: 144px;
+  padding-left: 17px;
+  border-bottom: none;
+  box-sizing: border-box;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  text-align: initial;
+  font-size: 1.1rem;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+#dropdownlist a:hover {
+  background-color: rgb(243, 232, 232);
+}
+
+.dropdown-list {
+  display: none;
+  height: 48px;
+  font-size: 1.1rem;
+  width: 194px;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+}
+
+#togglediv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Section  */
 #block {
   display: flex;
@@ -247,4 +300,123 @@ footer #social a {
 
 footer #social a:hover {
   color: rgb(34, 141, 177);
+}
+
+/* Mobile responsive */
+
+@media screen and (max-width: 600px) {
+  #icon {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: #90dae7;
+  }
+
+  img[alt="City Hospital"] {
+    height: 53px;
+    width: 60px;
+  }
+
+  #name {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+  }
+
+  body header nav {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  body header nav #tabs {
+    display: none;
+    flex-direction: column;
+    background-color: #e546e5;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+  }
+
+  body header nav #tabs a {
+    color: white;
+    font-size: 1.4rem;
+  }
+
+  body #tabs .hover {
+    color: white;
+    margin: 0px 0px 8px 12px;
+    font-size: 1.4rem;
+  }
+
+  #tabs #hovercontent2 {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  #tabs #hovercontent2 a {
+    display: block;
+    border: none;
+    width: 90%;
+    padding-left: 17px;
+    color: white;
+    background-color: #d71fd7;
+    font-size: 1.2rem;
+  }
+
+  #tabs #hovercontent2 a:hover {
+    background-color: rgb(231 35 35);
+  }
+
+  #block {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    padding-top: 30px;
+  }
+
+  #dropdownlist {
+    position: relative;
+    border: 1px solid rgb(203, 65, 65);
+  }
+
+  #dropdownlist a {
+    width: 192px;
+    font-size: 1.2rem;
+  }
+
+  #insertcontent {
+    padding: 26px;
+    margin: 0;
+  }
+
+  .dropdown-list {
+    display: flex;
+  }
+
+  #dept {
+    display: none;
+  }
+
+  footer {
+    height: fit-content;
+    text-align: center;
+    width: 100%;
+  }
+
+  footer span ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  footer span ul li {
+    margin: 29px 0px 29px 0px;
+  }
 }

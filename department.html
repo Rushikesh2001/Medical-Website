@@ -276,6 +276,26 @@
     </div>
 
     <section id="block">
+      <div id="togglediv">
+        <button class="dropdown-list" onclick="togglediv()">
+          <span id="item">Neurology</span>
+          <i
+            class="fas fa-caret-down"
+            style="color: black; display: inline"
+          ></i>
+        </button>
+        <div id="dropdownlist">
+          <a href="./department.html#box1" onclick="blockinsert1()"
+            >Neurology</a
+          >
+          <a href="./department.html#box2" onclick="blockinsert2()"
+            >Cardiology</a
+          >
+          <a href="./department.html#box3" onclick="blockinsert3()"
+            >Psychiatry</a
+          >
+        </div>
+      </div>
       <div id="dept">
         <a href="#box1" onclick="blockinsert1()"><h2>Neurology</h2></a>
         <a href="#box2" onclick="blockinsert2()"><h2>Cardiology</h2></a>
@@ -437,14 +457,36 @@
 
       function blockinsert1() {
         content.innerHTML = box1.innerHTML;
+        document.getElementById("item").innerHTML = "Neurology";
+        if (dropdownlist.style.display != "none") {
+          dropdownlist.style.display = "none";
+        }
       }
 
       function blockinsert2() {
         content.innerHTML = box2.innerHTML;
+        document.getElementById("item").innerHTML = "Cardiology";
+        if (dropdownlist.style.display != "none") {
+          dropdownlist.style.display = "none";
+        }
       }
 
       function blockinsert3() {
         content.innerHTML = box3.innerHTML;
+        document.getElementById("item").innerHTML = "Psychiatry";
+        if (dropdownlist.style.display != "none") {
+          dropdownlist.style.display = "none";
+        }
+      }
+
+      let dropdownlist = document.getElementById("dropdownlist");
+
+      function togglediv() {
+        if (dropdownlist.style.display != "none") {
+          dropdownlist.style.display = "none";
+        } else if (dropdownlist.style.display != "flex") {
+          dropdownlist.style.display = "flex";
+        }
       }
     </script>
     <script

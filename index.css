@@ -457,6 +457,8 @@ footer #social a:hover {
   color: rgb(34, 141, 177);
 }
 
+/* Mobile responsive */
+
 @media screen and (max-width: 600px) {
   #icon {
     display: flex;
@@ -497,11 +499,13 @@ footer #social a:hover {
 
   body header nav #tabs a {
     color: white;
+    font-size: 1.4rem;
   }
 
   body #tabs .hover {
     color: white;
     margin: 0px 0px 8px 12px;
+    font-size: 1.4rem;
   }
 
   #tabs #hovercontent2 {
@@ -517,8 +521,8 @@ footer #social a:hover {
     width: 90%;
     padding-left: 17px;
     color: white;
-    background-color: violet;
-    font-size: 1rem;
+    background-color: #d71fd7;
+    font-size: 1.2rem;
   }
 
   #tabs #hovercontent2 a:hover {
@@ -565,6 +569,7 @@ footer #social a:hover {
     padding: 5px 5px 5px 25px;
     align-items: center;
     height: fit-content;
+    font-size: 1.7rem;
     max-height: 189px;
   }
 
@@ -584,6 +589,7 @@ footer #social a:hover {
 
   #about h2 {
     margin: 22px 0px;
+    font-size: 2.2rem;
   }
 
   .content {
@@ -601,7 +607,7 @@ footer #social a:hover {
 
   #service h2 {
     margin-top: 15px;
-    margin-left: 15px;
+    font-size: 2.2rem;
   }
 
   #service #sblock {
@@ -623,5 +629,41 @@ footer #social a:hover {
   #service .block div:nth-child(2) {
     font-size: 1.1rem;
     text-align: justify;
+  }
+
+  #dept {
+    height: fit-content;
+    width: 100%;
+  }
+
+  #dept h2 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  #deptblock {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 1em;
+  }
+
+  #dept #deptblock .department {
+    height: fit-content;
+    width: 87%;
+  }
+
+  footer {
+    height: fit-content;
+    text-align: center;
+    width: 100%;
+  }
+
+  footer span ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  footer span ul li {
+    margin: 29px 0px 29px 0px;
   }
 }
