@@ -133,7 +133,7 @@ header nav #tabs a li button:hover {
 /* Container  */
 #intro {
   border: 2px solid none;
-  height: 88vh;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   color: #af117e;
@@ -667,3 +667,9 @@ footer #social a:hover {
     margin: 29px 0px 29px 0px;
   }
 }
+
+/* Tablet responsive */
+
+/* @media screen and (min-width:600px) and (max-width:900px) {
+  
+} */
