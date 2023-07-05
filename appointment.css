@@ -136,7 +136,7 @@ header nav #tabs a li button:hover {
   content: " ";
   display: block;
   height: 100%;
-  width: 99.7%;
+  width: 100%;
   position: absolute;
   background: url("./doc_appointment.jpg");
   background-repeat: no-repeat;
@@ -149,6 +149,8 @@ header nav #tabs a li button:hover {
 .container {
   display: flex;
   border: 2px solid none;
+  position: relative;
+  width: 100%;
   justify-content: center;
   height: 577px;
 }
@@ -220,6 +222,7 @@ footer span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 15px;
 }
 
 footer span ul {
@@ -342,15 +345,8 @@ footer #social a:hover {
 
   .container {
     align-items: center;
-    position: relative;
-    width: 100%;
     padding: 28px 0px;
     height: fit-content;
-  }
-
-  .container::before {
-    height: 100%;
-    width: 100%;
   }
 
   form {
@@ -385,5 +381,39 @@ footer #social a:hover {
 
   footer span ul li {
     margin: 29px 0px 29px 0px;
+  }
+}
+
+/* Tablet responsive */
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  header nav {
+    width: 100%;
+    overflow-x: scroll;
+    padding: 8px 0 0 0;
+  }
+
+  .container {
+    position: relative;
+    align-items: center;
+    padding: 20px 0;
+    height: 100%;
+  }
+
+  .container::before {
+    width: 100%;
+  }
+
+  form {
+    height: fit-content;
+    margin: 0;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+
+  footer span {
+    overflow-x: scroll;
   }
 }

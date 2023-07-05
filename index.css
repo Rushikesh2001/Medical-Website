@@ -160,14 +160,22 @@ header nav #tabs a li button:hover {
   /* align-items: center; */
   justify-content: center;
   height: 578px;
-  width: 441px;
+  width: 40%;
   padding: 0px 15px 0px 15px;
   background-color: #00edff;
 }
 
+#intro img {
+  min-width: 60%;
+}
+
+/* Appointment section  */
+
 #appointment {
   display: flex;
   height: 100px;
+  width: 100%;
+  box-sizing: border-box;
   background-color: blue;
   color: white;
   font-size: 1.9rem;
@@ -220,7 +228,8 @@ hr {
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 544px;
+  height: fit-content;
+  padding: 100px 0px;
   width: 100%;
   color: black;
 }
@@ -237,8 +246,8 @@ hr {
   flex-direction: column;
   border: 2px solid none;
   color: #810303;
-  width: 1127px;
-  text-align: center;
+  width: 85%;
+  text-align: justify;
   padding: 10px 10px 0 24px;
   font-size: 1.7rem;
   font-family: "Baloo Bhaijaan 2", cursive;
@@ -279,7 +288,9 @@ hr {
 
 #service {
   display: flex;
-  height: 783px;
+  height: fit-content;
+  width: 100%;
+  padding: 43px 0px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -332,6 +343,8 @@ hr {
 
 #dept {
   display: flex;
+  height: fit-content;
+  width: 100%;
   align-items: center;
   flex-direction: column;
   padding: 25px 0px;
@@ -356,8 +369,8 @@ hr {
   display: flex;
   flex-direction: column;
   margin: 29px auto auto auto;
-  height: 250px;
-  width: 300px;
+  height: fit-content;
+  width: 80%;
   border: 2px solid red;
 }
 
@@ -409,6 +422,7 @@ footer span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 15px;
 }
 
 footer span ul {
@@ -578,13 +592,8 @@ footer #social a:hover {
   }
 
   #about {
-    position: relative;
     height: fit-content;
-  }
-
-  #about::before {
-    position: absolute;
-    height: 100%;
+    padding: 43px 0;
   }
 
   #about h2 {
@@ -598,11 +607,6 @@ footer #social a:hover {
     padding: 0;
     margin: 5px 0px;
     font-size: 1.1rem;
-  }
-
-  #service {
-    height: fit-content;
-    width: 100%;
   }
 
   #service h2 {
@@ -631,11 +635,6 @@ footer #social a:hover {
     text-align: justify;
   }
 
-  #dept {
-    height: fit-content;
-    width: 100%;
-  }
-
   #dept h2 {
     font-size: 2.2rem;
     text-align: center;
@@ -647,7 +646,6 @@ footer #social a:hover {
   }
 
   #dept #deptblock .department {
-    height: fit-content;
     width: 87%;
   }
 
@@ -670,6 +668,50 @@ footer #social a:hover {
 
 /* Tablet responsive */
 
-/* @media screen and (min-width:600px) and (max-width:900px) {
-  
-} */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  header nav {
+    width: 100%;
+    overflow-x: scroll;
+    padding: 8px 0 0 0;
+  }
+
+  #intro {
+    width: 100%;
+  }
+
+  #intro span {
+    max-width: 441px;
+    box-sizing: border-box;
+  }
+
+  #intro pre {
+    text-wrap: balance;
+  }
+
+  #about {
+    min-height: 544px;
+    padding: 43px 0;
+  }
+
+  .content {
+    font-size: 1.5rem;
+  }
+
+  #service .block {
+    height: fit-content;
+    min-height: 216px;
+    width: 70%;
+  }
+
+  #deptblock {
+    grid-template-columns: repeat(auto-fill, minmax(222px, 1fr));
+  }
+
+  footer {
+    margin-top: auto;
+  }
+
+  footer span {
+    overflow-x: scroll;
+  }
+}

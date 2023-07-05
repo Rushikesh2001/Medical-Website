@@ -254,6 +254,7 @@ footer span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 15px;
 }
 
 footer span ul {
@@ -418,5 +419,44 @@ footer #social a:hover {
 
   footer span ul li {
     margin: 29px 0px 29px 0px;
+  }
+}
+
+/* Tablet responsive */
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  header nav {
+    width: 100%;
+    overflow-x: scroll;
+    padding: 8px 0 0 0;
+  }
+
+  #block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #dept {
+    border: 2px solid #ab8484;
+    border-right: none;
+    flex-direction: row;
+    margin-left: 41px;
+    width: 80%;
+    height: fit-content;
+  }
+
+  #dept a {
+    border-bottom: none;
+    border-right: 2px solid #ab8484;
+    height: 57px;
+    width: 222px;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+
+  footer span {
+    overflow-x: scroll;
   }
 }
