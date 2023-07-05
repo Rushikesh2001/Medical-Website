@@ -175,6 +175,7 @@ footer {
   border: 2px solid none;
   background-color: #232325;
   color: white;
+  margin-top: auto;
 }
 
 footer span {
