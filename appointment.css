@@ -151,6 +151,7 @@ header nav #tabs a li button:hover {
   border: 2px solid none;
   position: relative;
   width: 100%;
+  align-items: center;
   justify-content: center;
   min-height: calc(100vh - 76px - 323px);
   height: 577px;
@@ -167,7 +168,6 @@ form {
   border-radius: 16px;
   align-items: start;
   padding: 12px;
-  margin: 21px 0px 0px 34px;
 }
 
 .formerror {
